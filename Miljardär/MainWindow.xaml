@@ -1,0 +1,169 @@
+﻿<Window x:Class="Miljardär.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Miljardär"
+        mc:Ignorable="d"
+        Title="€CONOMIES$" Height="810" Width="1440" Topmost="True" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Window.Background>
+        <ImageBrush ImageSource="background_ikoner.jpg"/>
+    </Window.Background>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Image x:Name="player1" Height="30" Margin="0" Width="19" Source="playerRed.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-448" Y="-346"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="player2" Height="30" Margin="0" Width="19" Source="playerBlue.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-558" Y="230"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Button x:Name="btnMove" Content="Kasta" HorizontalAlignment="Left" Margin="10,682,0,0" VerticalAlignment="Top" Width="154" Height="88" Click="btnMove_Click" FontSize="20" FontWeight="Bold" Foreground="White"/>
+        <Label x:Name="lblDice" Content="6" HorizontalAlignment="Left" Margin="192,691,0,0" VerticalAlignment="Top" Height="56" Width="56" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FFCD0808" FontWeight="Bold" FontSize="30"/>
+        <Image x:Name="imgStreet8" Height="61" Width="29" Source="signForSale.png" RenderTransformOrigin="0.5,0.5" Margin="0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-456" Y="-210"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStreet7" Height="61" Width="29" Source="signForSale.png" RenderTransformOrigin="0.5,0.5" Margin="0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-472" Y="-174"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStreet6" Height="61" Width="29" Source="signForSale.png" RenderTransformOrigin="0.5,0.5" Margin="0">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-490" Y="-136"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStreet3" Height="61" Margin="0" Width="29" Source="signForSale.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-550" Y="-2"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Image x:Name="imgStreet2" Height="61" Margin="0" Width="29" Source="signForSale.png" RenderTransformOrigin="0.5,0.5">
+            <Image.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="-573" Y="48"/>
+                </TransformGroup>
+            </Image.RenderTransform>
+        </Image>
+        <Grid x:Name="gridPlayer1" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <TranslateTransform X="380" Y="190"/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lbl1Namn" Content="Namn:" Margin="0" VerticalAlignment="Center" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1Pengar" Content="Pengar:" Margin="0" VerticalAlignment="Center" Grid.Row="1" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1Fängelse" Content="I fängelse:" Margin="0" VerticalAlignment="Center" Grid.Row="2" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1FängelseOmgångar" Content="Omgångar kvar:" Margin="0" VerticalAlignment="Center" Grid.Row="3" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1Boklån" Content="Boklån:" Margin="0" VerticalAlignment="Center" Grid.Row="4" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1BoklånVarvKvar" Content="Varv kvar:" Margin="0" VerticalAlignment="Center" Grid.Row="5" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1Borgmästare" Content="Borgmästare:" Margin="0" VerticalAlignment="Center" Grid.Row="6" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl1Lön" Content="Lön:" Margin="0" VerticalAlignment="Center" Grid.Row="7" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lblPlayer1Name" Content="Spelare 1" Margin="0" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1Summa" Content="Summa" Margin="0" Grid.Row="1" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1Jail" Content="Fängelse" Margin="0" Grid.Row="2" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1TurnsLeft" Content="Omgångar kvar" Margin="0" Grid.Row="3" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1BookLoan" Content="Boklån" Margin="0" Grid.Row="4" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1BookLoanTurns" Content="Boklån Varv" Margin="0" Grid.Row="5" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1Mayor" Content="Borgmästare" Margin="0" Grid.Row="6" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer1Salary" Content="Lön" Margin="0" Grid.Row="7" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+        </Grid>
+        <Grid x:Name="gridPlayer2" HorizontalAlignment="Left" Margin="0" VerticalAlignment="Top" Width="210" RenderTransformOrigin="0.5,0.5">
+            <Grid.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform X="610" Y="190"/>
+                </TransformGroup>
+            </Grid.RenderTransform>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Label x:Name="lbl2Namn" Content="Namn:" Margin="0" VerticalAlignment="Center" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2Pengar" Content="Pengar:" Margin="0" VerticalAlignment="Center" Grid.Row="1" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2Fängelse" Content="I fängelse:" Margin="0" VerticalAlignment="Center" Grid.Row="2" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2FängelseOmgångar" Content="Omgångar kvar:" Margin="0" VerticalAlignment="Center" Grid.Row="3" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2Boklån" Content="Boklån:" Margin="0" VerticalAlignment="Center" Grid.Row="4" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2BoklånVarvKvar" Content="Varv kvar:" Margin="0" VerticalAlignment="Center" Grid.Row="5" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2Borgmästare" Content="Borgmästare:" Margin="0" VerticalAlignment="Center" Grid.Row="6" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lbl2Lön" Content="Lön:" Margin="0" VerticalAlignment="Center" Grid.Row="7" FontWeight="Bold" Foreground="White"/>
+            <Label x:Name="lblPlayer2Name" Content="Spelare 1" Margin="0" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2Summa" Content="Summa" Margin="0" Grid.Row="1" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2Jail" Content="Fängelse" Margin="0" Grid.Row="2" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2TurnsLeft" Content="Omgångar kvar" Margin="0" Grid.Row="3" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2BookLoan" Content="Boklån" Margin="0" Grid.Row="4" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2BookLoanTurns" Content="Boklån Varv" Margin="0" Grid.Row="5" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2Mayor" Content="Borgmästare" Margin="0" Grid.Row="6" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+            <Label x:Name="lblPlayer2Salary" Content="Lön" Margin="0" Grid.Row="7" VerticalContentAlignment="Center" Grid.Column="1" VerticalAlignment="Center" Foreground="White"/>
+        </Grid>
+
+        <TextBox x:Name="txtFejkTärning" HorizontalAlignment="Left" Height="47" Margin="10,630,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="67" Text="3" FontSize="24" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
+        <Label Content="=&gt; Fejktärning. För att kunna flytta önskat antal steg." HorizontalAlignment="Left" Margin="82,630,0,0" VerticalAlignment="Top" Height="33" Width="308" VerticalContentAlignment="Center"/>
+    </Grid>
+</Window>

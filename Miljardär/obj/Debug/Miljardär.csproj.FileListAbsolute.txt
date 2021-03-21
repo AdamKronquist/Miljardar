@@ -1,0 +1,17 @@
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\bin\Debug\Miljardär.exe.config
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\bin\Debug\Miljardär.exe
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\bin\Debug\Miljardär.pdb
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.csprojAssemblyReference.cache
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\MainWindow.g.cs
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\App.g.cs
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär_MarkupCompile.cache
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär_MarkupCompile.lref
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\MainWindow.baml
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.g.resources
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.Properties.Resources.resources
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.csproj.GenerateResource.cache
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.csproj.CoreCompileInputs.cache
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.exe
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Miljardär.pdb
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Setup.g.cs
+C:\Adam\Spel\Miljardär\Miljardär\Miljardär\obj\Debug\Setup.baml
